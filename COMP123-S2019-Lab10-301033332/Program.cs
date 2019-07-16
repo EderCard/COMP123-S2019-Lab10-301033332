@@ -16,7 +16,7 @@ namespace COMP123_S2019_Lab10_301033332
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainForm());
+            Application.Run(new StartForm());
         }
     }
 }
