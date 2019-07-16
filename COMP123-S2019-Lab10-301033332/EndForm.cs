@@ -10,20 +10,24 @@ using System.Windows.Forms;
 
 namespace COMP123_S2019_Lab10_301033332
 {
-    public partial class MainForm : Form
+    public partial class EndForm : Form
     {
-        public MainForm()
+        public EndForm()
         {
             InitializeComponent();
         }
-
-        private void NextButton_Click(object sender, EventArgs e)
+        /// <summary>
+        /// This is the event handler for the BackButton click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BackButton_Click(object sender, EventArgs e)
         {
-            //new instance of EndForm
-            EndForm endForm = new EndForm();
+            //new instance of MainForm
+            MainForm mainForm = new MainForm();
             //show MainForm
-            endForm.Show();
-            //hide this "MainForm" form
+            mainForm.Show();
+            //hide this "EndForm" form
             this.Hide();
         }
         /// <summary>
@@ -31,7 +35,7 @@ namespace COMP123_S2019_Lab10_301033332
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        private void EndForm_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
