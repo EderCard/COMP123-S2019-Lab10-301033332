@@ -19,12 +19,16 @@ namespace COMP123_S2019_Lab10_301033332
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            //new instance of EndForm
-            EndForm endForm = new EndForm();
-            //show MainForm
-            endForm.Show();
-            //hide this "MainForm" form
-            this.Hide();
+            #region Refactored
+            ////new instance of EndForm
+            //EndForm endForm = new EndForm();
+            ////show MainForm
+            //endForm.Show();
+            ////hide this "MainForm" form
+            //this.Hide();
+            #endregion
+            Program.endForm.Show();
+            Program.mainForm.Hide();
         }
         /// <summary>
         /// This is the event handler for the closing form event

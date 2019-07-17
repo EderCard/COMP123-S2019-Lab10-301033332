@@ -34,12 +34,16 @@ namespace COMP123_S2019_Lab10_301033332
         {
             //stop triggering every timer interval
             SplashTimer.Enabled = false;
-            //new instance of MainForm
-            MainForm mainForm = new MainForm();
-            //display main form
-            mainForm.Show();
-            //hide this "StartForm" form
-            this.Hide();
+            #region Refactored
+            ////new instance of MainForm
+            //MainForm mainForm = new MainForm();
+            ////display main form
+            //mainForm.Show();
+            ////hide this "StartForm" form
+            //this.Hide();
+            #endregion
+            Program.mainForm.Show();
+            Program.startForm.Hide();
         }
     }
 }

@@ -23,12 +23,16 @@ namespace COMP123_S2019_Lab10_301033332
         /// <param name="e"></param>
         private void BackButton_Click(object sender, EventArgs e)
         {
-            //new instance of MainForm
-            MainForm mainForm = new MainForm();
-            //show MainForm
-            mainForm.Show();
-            //hide this "EndForm" form
-            this.Hide();
+            #region Refactored
+            ////new instance of MainForm
+            //MainForm mainForm = new MainForm();
+            ////show MainForm
+            //mainForm.Show();
+            ////hide this "EndForm" form
+            //this.Hide();
+            #endregion
+            Program.mainForm.Show();
+            Program.endForm.Hide();
         }
         /// <summary>
         /// This is the event handler for the closing form event
